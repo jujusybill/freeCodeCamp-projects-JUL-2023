@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="styles.css">
+<html>
+  <main id="main-doc">
+    <nav id="navbar">
+      <header>JS Documentation Basics</header>
+      <div>
+      <a class="nav-link" href="#Introduction">Introduction</a>
+      <a class="nav-link" href="#Things_to_know">Things to know</a>
+      <a class="nav-link" href="#Javascript_and_Java">Javascript and Java</a>
+      <a class="nav-link" href="#Hello_World">Hello World</a>
+      <a class="nav-link" href="#References">References</a>
+      </div>
+    </nav>
+
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.</p>
+      <p>JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:</p>
+    </section>
+
+    <section class="main-section" id="Things_to_know">
+      <header>Things to know</header>
+      <p>This guide assumes you have the following basic background:</p>
+        <li>A general understanding of the Internet and the World Wide Web (WWW). </li>
+        <li>Good working knowledge of HyperText Markup Language (HTML).</li>
+        <li>Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about JavaScript. </li>
+      <p>Let's see what else we can learn about Java!</p>
+      <p>Click on the links on the left to jump between sections.</p>
+    </section>
+
+    <section class="main-section" id="Javascript_and_Java">
+      <header>Javascript and Java</header>
+      <p>JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript. </p>
+      <p>In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing numeric, Boolean, and string values. JavaScript has a prototype-based object model instead of the more common class-based object model. The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects. JavaScript also supports functions without any special declarative requirements. Functions can be properties of objects, executing as loosely typed methods. </p>
+      <p>JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed</p>
+      <p>Examples of Javascript (note that the // characters denote comments):</p>
+      <span> <code>const num1 = 5;
+const num2 = 3; </br>
+
+// add two numbers
+const sum = num1 + num2;</br>
+
+// display the sum
+console.log('The sum of ' + num1 + ' and ' + num2 + ' is: ' + sum);</code></br></span></br><span>
+      <code>// the hello world program</br>
+console.log('Hello World');</code> </span>
+
+      <p>Examples of Java:</p>
+      <span> <code>class xyz  
+ {   
+public static void main(String args[]){ </br>   
+ System.out.println("Hello World");   
+}   
+}   </br>
+</code></br></span></br><span>
+      <code>public class CheeseCurls {
+  public static void main(String[] args) </br> {
+    System.out.println("Here's a bag of Cheese curls");
+  }
+}</code> </span>
+    </section>
+  </br>
+
+    <section class="main-section" id="Hello_World">
+      <header>Hello World</header>
+      <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code: </p>
+      <div>
+        <code>function greetMe(yourName) { alert("Hello " + yourName); } </br> greetMe("World");</code>
+      </div>
+      <p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser! </p>
+    </section>
+
+    <section class="main-section" id="References">
+      <header>References</header>
+      <li>https://technical-documentation-page.freecodecamp.rocks</li>
+      <li>https://www.w3schools.com/html/</li>
+      <li>https://www.w3schools.com/html/html5_syntax.asp</li>
+      <li>https://forum.freecodecamp.org/t/each-nav-link-should-have-an-href-attribute-that-links-to-its-corresponding-main-section-e-g-if-you-click-on-a-nav-link-element-that-contains-the-text-hel/515502</li>
+      <li>https://dev.to/devsyedmohsin/html-tips-tricks-that-you-will-love-to-know-27ig</li>
+      <li>https://dev.to/devsyedmohsin/22-useful-css-tips-and-tricks-every-developer-should-know-13c6</li>
+    </section>
+  </main>
+</html>
