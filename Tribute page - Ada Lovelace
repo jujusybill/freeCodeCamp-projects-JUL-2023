@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<html>
+  <link rel="stylesheet" href="styles.css"></link>
+  <main id="main">
+    <head>
+      <title></title>
+      <h1 id="title">Ada Lovelace</h1>
+      <h2>The first programmer in the world!</h2>
+    </head>
+    <body>
+      <figure id="img-div">
+        <img id="image" alt="Watercolour portrait of Ada Lovelace" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Ada_Lovelace_portrait.jpg/1024px-Ada_Lovelace_portrait.jpg"></img>
+        <figcaption id="img-caption">Watercolor portrait of Ada Lovelace by Alfred Edward Chalon</figcaption>
+      </figure>
+      <h3 id="tribute-info"><u>Fun facts</u></h3>
+        <ul>
+          <li>Ada was born in December of 1815 in London, England to Lord and Lady Byron. Her father was a poet and mother was a highly educated and a very strict religious woman.</li></br>
+          <li>She was originally interested in phrenology (study of the shape and size of the cranium as a supposed indication of character and mental abilities) and mesmerism (or animal magnetism) before delving into mathematics and computation.</li></br>
+          <li>Ada wrote her first algorithm in late 1842 after attending a lecture by Charles Babbage on his Analytical Engine.</li></br>
+          <li>In her notes and article on "Note G", Ada even dismissed the idea of <b>artificial intelligence</b>, arguing that "the Analytical Engine has no pretensions whatever to originate anything. It can do whatever we know how to order it to perform. It can follow analysis; but it has no power of anticipating any analytical relations or truths". </li></br>
+          <li>There are many forms of commemoration for her contribution to programming and mathematics, including a programming language, prizes, initiatives, and academies to honor Ada Lovelace.</li></br>
+        </ul>
+    </body>
+    <footer>
+      <a id="tribute-link" target="_blank" href="https://en.wikipedia.org/wiki/Ada_Lovelace">Check out more information on her Wikipedia page linked here!
+      </a>
+    </footer>
+  </main>
+</html>
