@@ -1,0 +1,91 @@
+<!DOCTTYPE html>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <h1 id="title"> freeCodeCamp Survey Form
+  </h1>
+
+  <p id="description"> Thank you for taking time to help us improve!
+  </p>
+
+  <form id="survey-form">
+
+    <fieldset class="first">
+      <label id="name-label"> Enter you name:
+        <input id="name" type="text" placeholder="John Smith" required> </input>
+      </label>
+
+      <label id="email-label">Enter your email: 
+        <input id="email" type="email" required placeholder="jsmith@email.com"> </input>
+      </label>
+
+      <label id="number-label">Enter your age (optional):
+        <input id="number" type="number" min="13" max="999" placeholder="25">  
+        </input>
+     </label>
+    </fieldset>
+
+    <fieldset class="second">
+      <label> Which best describes you? 
+        <select id="dropdown">
+          <option id="0">Select one</option>
+          <option id="1">Student</option>
+          <option id="2">Educator</option>
+          <option id="3">Professional</option>
+          <option id="4">Other</option>
+        </select>
+      </label>
+    </fieldset>
+
+    <fieldset class="third">
+      <label for="recommend"> Would you recommend freeCodeCamp to a friend?
+        <input name="choice" id="yes" value="yes" type="radio"> Yes
+        </input>
+        <input name="choice" id="no" type="radio" value="no"> No
+        </input>
+        <input name="choice" id="unsure" value="unsure" type="radio"> Unsure
+        </input>
+      </label>
+    </fieldset>
+
+    <fieldset class="fourth">
+      <label for="checkbox"> What would you like to see improve? (Check all that apply):
+        <input id="checkbox" type="checkbox" value="Instructions"> Instructions
+        </input>
+        <input id="checkbox" type="checkbox" value="Explanations"> Explanations
+        </input>
+        <input id="checkbox" type="checkbox" value="Project styles"> Project styles
+        </input>
+        <input type="checkbox" value="Forum"> Forum
+        </input>
+        <input id="checkbox" type="checkbox" value="Videos"> Videos
+        </input>
+        <input id="checkbox" type="checkbox" value="Help Feature"> Help Feature
+        </input>
+        <input id="checkbox" type="checkbox" value="Other"> Other
+        </input>
+      </label>
+    </fieldset>
+    
+    <fieldset id="fifth">
+      <label for="comments"> Additional comments:
+        <textarea id="comments" rows="5" cols="50">
+        </textarea>
+      </label>
+    </fieldset>
+
+    <fieldset class="sixth">
+      <label>
+        <button id="submit" type="submit">
+        Submit
+        </button>
+      </label>
+    </fieldset>
+  </form>
+</body>
+</html>
