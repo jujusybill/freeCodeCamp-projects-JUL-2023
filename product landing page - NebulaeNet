@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <header id="header"> 
+      <nav id="nav-bar" class="nav-bar">
+        <ul>
+          <img id="header-img" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Fnebula_947674&psig=AOvVaw3daFvNkroB6VisRn3AiUKw&ust=1689989250683000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCIC2v9nSnoADFQAAAAAdAAAAABAE"></img>
+          <i>NebulaeNet</i>
+          <a id="link1" class="nav-link" href="#div1">What is a Nebula?</a>
+          <a id="link2" class="nav-link" href="#div2">NebulaNet: Who We Are</a>
+          <a id="link3" class="nav-link" href="#div3">How can I get a star?</a>
+        </ul>
+      </nav>  
+    </header>
+  </head>
+
+  <body>
+
+    <div id="div1">
+      <h2>What is a nebula?</h2>
+      <p>A nebula is the birthplace of stars!</br></br> Made up of cosmic dust and gases, these ingredients will condense and form stars. Coming in all shapes, sizes, and colors; nebulae (plural) have been growing and birthing stars since the beginning of time and the universe!</p></br></br>
+      <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/0MzWiKjSr9I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <div id="div2">
+      <h2>NebulaNet: Who We Are</h2>
+      <p>We are a cosmic farming firm.</br></br> We have partnered with NASA and ESA to bring  the unreachable sky to your home!</p> <h4> How does <b>that</b> work?</h4> <p>Our highly advanced AI robots were sent out 2 years ago to reach the closest nebula (Helix - 700 lightyears away from Earth). They have been gathering gases and cosmic dust at the nebula, and condensing them into miniature stars you can use to power your home for the rest of your life! Our super efficient and speedy UAVs will pick up your order from the Helix nebula AI robots and shoot them to your home in just over a year!</p></br></br>
+    </div>
+
+    <div id="div3">
+      <h2>How can I get a star?</h2>
+      <p>Just fill out the form below and we will contact you! </br>(pricing information available in 2024) </p></br></br>
+
+      <span><form id="form" methos="POST" action="https://www.freecodecamp.com/email-submit">
+        <label>Your name: </label>
+        <input name="name" id="name" input type="text" placeholder="John Smith" required></br></br>
+
+        <label>Your email: </label>
+        <input name="email" id="email" input type="email" placeholder="john-smith@gmail.com" required></input></br></br>
+
+        <label> Who is this for?</label></br>
+        <input type="radio" id="self" name="who" value="self">
+        <label for="self">Self</label><br>
+        <input type="radio" id="someone-else" name="who" value="someone else">
+        <label for="someone-else">Someone Else</label><br></br>
+
+        <label> Where are we shipping?</label></br>
+        <input type="radio" id="africa" name="where" value="africa">
+        <label for="africa">Africa</label><br>
+        <input type="radio" id="americas" name="where" value="americas">
+        <label for="americas">Americas</label><br>
+        <input type="radio" id="asia" name="where" value="asia">
+        <label for="asia">Asia</label><br>
+        <input type="radio" id="europe" name="where" value="europe">
+        <label for="europe">Europe</label><br>
+        <input type="radio" id="pacifica" name="where" value="pacifica">
+        <label for="pacifica">Pacifica</label><br></br>
+
+        <input class="submit" id="submit" type="submit" value="SUBMIT"></input></br></div>
+        
+
+      </form>
+    </span>
+
+  </body>
+</html>
