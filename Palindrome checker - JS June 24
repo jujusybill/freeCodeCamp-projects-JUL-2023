@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet"  href="styles.css"/>
+    <meta charset="UTF-8"/>
+  </head>
+  <body>
+    <div id="full">
+      <div id="fst-box">
+        <p id="title"> Palindrome Checker </p></div>
+      <div id="snd-box">
+        <p id="text">Enter in text to check for palindrome below:</p>
+        <input id="text-input" placeholder="Enter candidate here"></input>
+        <button id="check-btn">Check</button>
+      </div>
+      <div id="trd-box">
+        <p id="result">Is your word a palindrome?</p>
+      </div>
+      <div id="fth-box">
+        <p id="palin-expl">A palindrome is a word or sentence</br> that's spelled the same way both</br> forward and backward, ignoring</br> punctuation, case, and spacing.</p>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
+_______________________________________________________________________________________________________________________________________________________________________________________
+
+#title {
+  text-align: center;
+  color: black;
+  display: block;
+  font-size: 40px;
+}
+#text {
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  border-radius: 25px;
+  height: 25px;
+  width: 50%;
+  position: relative;
+  top: 10px;
+  left: 185px;
+  
+}
+
+#full {
+  background-color: #f4dfdf;
+  border-radius: 25px;
+  padding-bottom: 10px;
+}
+
+#fst-box {
+  background-color: #e46868;
+  border: solid black;
+  height: 100px;
+  width: 50%;
+  position: relative;
+  top: 10px;
+  padding-bottom: 25px;
+  left: 185px;
+  border-radius: 25px;
+}
+
+#snd-box {
+  text-align: center;
+  background-color: pink;
+  height: 90px;
+  position: relative;
+  top: 10px;
+}
+
+#trd-box {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 2px;
+  font-size: 20px;
+}
+
+#fth-box {
+  background-color: #c89c9c;
+  border: solid black 2px;
+  text-align: center;
+  position: relative;
+  width: 50%;
+  left: 185px;
+  border-radius: 25px;
+}
+
+#palin-expl {
+  font-size: 20px;
+}
+___________________________________________________________________________________________________________________________________________________________________________________________
+const input = document.querySelector("#text-input");
+const button = document.querySelector("#check-btn");
+const result = document.querySelector("#result");
+
+const checkForPalindrome = (e) => {
+  if (input.value === "") {
+    alert("Please input a value.");
+  } else {
+    const cleanInput = input.value
+      .trim()
+      .toLowerCase()
+      .replace(/[^a-z0-9]/g, "");
+
+    if (cleanInput === "a") {
+      result.innerHTML = `${input.value} is a palindrome.`;
+    } else if (cleanInput === cleanInput.split("").reverse().join("")) {
+      result.innerHTML = `${input.value} is a palindrome.`;
+    } else {
+      result.innerHTML = `${input.value} is not a palindrome.`;
+    }
+  }
+};
+
+button.addEventListener("click", checkForPalindrome);
+
